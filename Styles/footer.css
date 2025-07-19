@@ -1,0 +1,113 @@
+.site-footer {
+  background: linear-gradient(135deg, #0d1117, #1f1f2e);
+  color: #ccc;
+  padding: 50px 20px 30px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.5);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #222;
+  padding-bottom: 25px;
+}
+
+.footer-left h3 {
+  font-size: 26px;
+  color: #00bcd4;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 0 8px #00bcd455;
+}
+
+.footer-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00bcd4;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.footer-menu a:hover {
+  color: #00ffff;
+}
+
+.footer-menu a:hover::after {
+  width: 100%;
+}
+
+/* Social Icons & Mail */
+.footer-right a {
+  margin-left: 15px;
+  color: #ccc;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.footer-right a:first-child {
+  margin-left: 0; /* Remove gap before the first icon */
+}
+
+.footer-right a:hover {
+  color: #00ffff;
+  transform: translateY(-3px) scale(1.15);
+  box-shadow: 0 0 10px #00ffff88;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 15px;
+  }
+
+  .footer-menu li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .footer-right {
+    margin-top: 15px;
+  }
+}

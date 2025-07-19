@@ -1,0 +1,129 @@
+#education {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0a1931, #1a2a3a);
+}
+
+.edu-card {
+  display: flex;
+  gap: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 520px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(30, 144, 255, 0.5);
+}
+
+.edu-logo img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: #12243e;
+  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.edu-logo img:hover {
+  box-shadow: 0 10px 30px rgba(30, 144, 255, 0.6);
+}
+
+.edu-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #e0e0e0;
+}
+
+.edu-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: #1e90ff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.edu-info h4 {
+  margin: 4px 0 12px 0;
+  font-size: 18px;
+  color: #f9a825;
+  font-weight: 600;
+}
+
+.edu-info p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #b0b8c1;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  #education {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu-card {
+    flex-direction: row;
+    width: 90%;
+    padding: 20px 25px;
+  }
+
+  .edu-logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .edu-info h3 {
+    font-size: 20px;
+  }
+
+  .edu-info h4 {
+    font-size: 16px;
+  }
+
+  .edu-info p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .edu-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  .edu-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .edu-info h3 {
+    font-size: 18px;
+  }
+
+  .edu-info h4 {
+    font-size: 15px;
+  }
+
+  .edu-info p {
+    font-size: 13px;
+  }
+}

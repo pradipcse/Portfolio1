@@ -1,0 +1,113 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0a1a2f; /* Dark Navy Blue */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+#navBar {
+    background-color: #001f3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#name-field {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #002244, #003366);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#name-field:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(102, 204, 255, 0.3);
+}
+
+#menue-List {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    font-size: 1rem;
+}
+
+#menue-List li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menue-List li a:hover {
+    background-color: #005080;
+    color: #ffffff;
+}
+
+/* Content Items */
+.content-item {
+    color: #ffffff;
+    border: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    #name-field {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    #menue-List {
+        flex-direction: row;
+        gap: 15px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    #name-field {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    #menue-List {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.95rem;
+        padding: 0;
+    }
+
+    .content-item {
+        padding: 5px 0;
+    }
+}

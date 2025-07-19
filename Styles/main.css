@@ -1,0 +1,12 @@
+/* main.css or style.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #001a33; /* Dark navy blue */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}

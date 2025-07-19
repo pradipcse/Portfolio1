@@ -1,0 +1,118 @@
+.organization-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0d1117, #1e1e2f);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+}
+
+.organization-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 45px;
+  color: #00bfff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #00bfff88;
+}
+
+.organization-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.organization-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 300px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.organization-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px #00bfffaa;
+}
+
+.organization-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.organization-card img:hover {
+  box-shadow: 0 10px 30px #00bfffaa;
+}
+
+.organization-card h3 {
+  font-size: 1.6rem;
+  margin: 10px 0 8px;
+  color: #68d2ff;
+  font-weight: 700;
+}
+
+.organization-card h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.organization-card .org-date {
+  font-size: 0.9rem;
+  color: #9ab9d4;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.organization-card .org-desc {
+  font-size: 1rem;
+  color: #d0d8e8;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.organization-card .org-btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 15px #00bfff99;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.organization-card .org-btn:hover {
+  background-color: #009acd;
+  box-shadow: 0 10px 25px #009acdcc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .organization-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .organization-card {
+    width: 90%;
+  }
+}
